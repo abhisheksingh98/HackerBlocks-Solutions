@@ -17,4 +17,3 @@ int main()
         cout << row - 1 << endl;
     }
     return 0;
-}
