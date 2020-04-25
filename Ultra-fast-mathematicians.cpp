@@ -22,3 +22,22 @@ int main() {
 	return 0;
 } 
 
+// int main() {
+//     int t;
+//     cin>>t;
+//     while(t--)
+//     {
+
+    
+//     string s1,s2;
+//     cin>>s1>>s2;
+//     int l=s1.length();
+//     for(int i=0;i<l;i++){
+//         if(s1[i]!=s2[i]){
+//             cout<<1;
+//         }
+//         else cout<<0;
+//     }
+//     cout<<endl;
+//     }
+// }
