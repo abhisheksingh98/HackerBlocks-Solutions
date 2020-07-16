@@ -30,3 +30,9 @@ int main(){
 	currStrength < minStrength ? cout << "No" : cout << "Yes\n" << currStrength;
 	return 0;
 }
+
+//---------------------------------------------
+//Little Simplified
+
+
+
