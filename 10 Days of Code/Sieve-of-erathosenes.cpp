@@ -34,7 +34,7 @@ int main(){
 
     //lets print primes upto range n
     for(int i=0;i<=n;i++){
-        if(p[i]==1){
+        if(a[i]==1){
             cout<<i<<", ";
         }
     }
