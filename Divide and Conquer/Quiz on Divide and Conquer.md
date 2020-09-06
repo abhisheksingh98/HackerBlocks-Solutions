@@ -61,4 +61,7 @@ Recurrence relation will be:
 
 T(n) = T(⌈n/2⌉)+T(⌊n/2⌋)+2 = 2T(n/2)+2 = ⌈3n/2⌉-2
 
+## Q6. DNC OR GREEDY OR DP
+If a problem can be solved by combining optimal solutions to non-overlapping problems, the strategy is called _ DIVIDE & CONQUER
+
 
