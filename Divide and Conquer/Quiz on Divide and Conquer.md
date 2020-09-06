@@ -64,4 +64,23 @@ T(n) = T(⌈n/2⌉)+T(⌊n/2⌋)+2 = 2T(n/2)+2 = ⌈3n/2⌉-2
 ## Q6. DNC OR GREEDY OR DP
 If a problem can be solved by combining optimal solutions to non-overlapping problems, the strategy is called _ DIVIDE & CONQUER
 
+## Q7. Calculate the complexity
+What is the complexity of the following recurrence :
+7T(n/2) + an^2
 
+### Solution :
+comparing with the equation (MASTER THEOREM)
+
+T(n) = aT(n/b) + ⊖(n^k lognp)
+we get ,a=7,b=2,k=2,p=0
+
+now it satisfies a>b^k,
+
+so case first of master theorem
+
+T(n) = ⊖(n^logba)
+T(n)=⊖(n^3)
+
+(T(n)=n^log(base2)7 =n^2.81 i.e f(n) is polynomially smaller than t(n), therefore it is first case
+
+ therefore, ans is ⊖(n^log7) or ⊖(n^2.81))
