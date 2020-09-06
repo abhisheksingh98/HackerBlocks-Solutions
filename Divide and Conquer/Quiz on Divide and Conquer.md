@@ -26,11 +26,17 @@ find (int n)
 }
 Assume that the division operation takes constant time and “sum” is global variable. What is the time complexity of “find (n)” ?
 
-# Solution: 
+### Solution: 
 Recurrence Relation for above code is T(n) = 4T(n/2) + n^2
 By Master's Theorem we will get time complexity as T(n)= θ(n^2logn)
 
+## Q4. Maximum Sum Subarray
+Maximum Subarray Sum problem is to find the subarray with maximum sum. For example, given an array {12, -13, -5, 25, -20, 30, 10}, the maximum subarray sum is 45.
+The naive solution for this problem is to calculate sum of all subarrays starting with every element and return the maximum of all. We can solve this using Divide and Conquer, what will be the worst case time complexity using Divide and Conquer.
 
+### Solution:
+
+Naive solution would be to consider every possible subarray and find sum of all of them and take maximum. The problem with this approach is that its worst case time complexity is O(n^2)
 
 
 
