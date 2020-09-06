@@ -12,6 +12,24 @@ Asymptotically, the harmonic numbers grow on the order of log(n). This is becaus
 (C) Cooley-Tukey fast Fourier transform
 (D) Quick Sort
 
+## 3. Consider the following function
+
+find (int n)
+ {
+  if (n < 2 ) then return; 
+  else
+   {
+    sum= 0;
+    for (i= 1; i ≤ 4; i++) find (n/2);
+    for (i=1; i≤ n*n; i++) sum= sum + 1;
+  } 
+}
+Assume that the division operation takes constant time and “sum” is global variable. What is the time complexity of “find (n)” ?
+
+# Solution: 
+Recurrence Relation for above code is T(n) = 4T(n/2) + n^2
+By Master's Theorem we will get time complexity as T(n)= θ(n^2logn)
+
 
 
 
