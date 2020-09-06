@@ -38,6 +38,27 @@ The naive solution for this problem is to calculate sum of all subarrays startin
 
 Naive solution would be to consider every possible subarray and find sum of all of them and take maximum. The problem with this approach is that its worst case time complexity is O(n^2)
 
+## Q5. Comparison Required Using DNC
+The number of comparisons required to find maximum and minimum in the given array of n- element using divide and conquer:
 
+a. ciel(3n/2)
+
+b. ciel(3n/2)+2
+
+c. floor(3n/2)
+
+d. floor(3n/2)-2
+
+### Solution:
+Steps to find minimum and maximum element out of n numbers:
+
+1. Pick 2 elements(a, b), compare them. (say a > b)
+2. Update min by comparing (min, b)
+3. Update max by comparing (max, a)
+Therefore, we need 3 comparisons for each 2 elements, so total number of required comparisons will be (3n)/2 – 2, because we do not need to update min or max in the very first step.
+
+Recurrence relation will be:
+
+T(n) = T(⌈n/2⌉)+T(⌊n/2⌋)+2 = 2T(n/2)+2 = ⌈3n/2⌉-2
 
 
